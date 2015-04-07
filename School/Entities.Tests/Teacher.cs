@@ -17,7 +17,7 @@ namespace Entities.Tests
         [TestMethod]
         public void TeacherCreateTest()
         {
-            var teacher = new Entities.Teacher();
+            var teacher = new RandomTeacher();
         }
 
         #region Additional test attributes

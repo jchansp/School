@@ -17,7 +17,7 @@ namespace Entities.Tests
         [TestMethod]
         public void StudentCreateTest()
         {
-            var student = new Entities.Student();
+            var student = new RandomStudent();
         }
 
         #region Additional test attributes
