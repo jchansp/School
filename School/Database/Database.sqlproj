@@ -64,6 +64,7 @@
     <Build Include="People.sql" />
     <Build Include="PersistPerson.sql" />
     <Build Include="Person.sql" />
+    <Build Include="Country.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Countries.data.sql" />
