@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Countries.sql" />
-    <Build Include="GetRandomCountryId.sql" />
+    <Build Include="GetRandomCountry.sql" />
     <Build Include="People.sql" />
     <Build Include="PersistPerson.sql" />
   </ItemGroup>

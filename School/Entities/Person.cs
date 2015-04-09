@@ -15,17 +15,17 @@ namespace Entities
             Persist();
         }
 
-        public Person(Guid id, string name, Guid countryId)
+        public Person(Guid id, string name, Country country)
         {
-            Persist(id, name, countryId);
+            Persist(id, name, country);
             Id = id;
             Name = name;
-            CountryId = countryId;
+            Country = country;
         }
 
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public Guid CountryId { get; set; }
+        public Country Country { get; set; }
 
         private void Persist()
         {
@@ -41,14 +41,14 @@ namespace Entities
 
                     sqlCommand.Parameters.AddWithValue("@Id", Id);
                     sqlCommand.Parameters.AddWithValue("@Name", Name);
-                    sqlCommand.Parameters.AddWithValue("@CountryId", CountryId);
+                    sqlCommand.Parameters.AddWithValue("@CountryId", Country.Id);
 
                     sqlCommand.ExecuteNonQuery();
                 }
             }
         }
 
-        private void Persist(Guid id, string name, Guid country)
+        private void Persist(Guid id, string name, Country country)
         {
             var connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
             using (var sqlConnection = new SqlConnection(connectionString))
@@ -62,7 +62,7 @@ namespace Entities
 
                     var idSqlParameter = sqlCommand.Parameters.AddWithValue("@Id", id);
                     var nameSqlParameter = sqlCommand.Parameters.AddWithValue("@Name", name);
-                    var countrySqlParameter = sqlCommand.Parameters.AddWithValue("@CountryId", country);
+                    var countrySqlParameter = sqlCommand.Parameters.AddWithValue("@Country", country);
 
                     //using (var dr = command.ExecuteReader())
                     //{
@@ -81,7 +81,7 @@ namespace Entities
         {
             Id = RandomId();
             Name = RandomName();
-            CountryId = RandomCountry();
+            Country = RandomCountry();
         }
 
         private Guid RandomId()
@@ -89,12 +89,12 @@ namespace Entities
             return Guid.NewGuid();
         }
 
-        private Guid RandomCountry()
+        private Country RandomCountry()
         {
             var connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
             using (var sqlConnection = new SqlConnection(connectionString))
             {
-                using (var sqlCommand = new SqlCommand("GetRandomCountryId", sqlConnection)
+                using (var sqlCommand = new SqlCommand("GetRandomCountry", sqlConnection)
                 {
                     CommandType = CommandType.StoredProcedure
                 })
@@ -102,16 +102,21 @@ namespace Entities
                     sqlConnection.Open();
 
                     //SqlParameter custId = cmd.Parameters.AddWithValue("@CustomerId", 10);
+                    Country country = null;
+                    using (var sqlDataReader = sqlCommand.ExecuteReader())
+                    {
+                        if (sqlDataReader.Read())
+                        {
+                            country = new Country
+                            {
+                                Id = new Guid(sqlDataReader["Id"].ToString()),
+                                Name = sqlDataReader["Name"].ToString()
+                            };
+                        }
+                    }
 
-                    //using (var dr = command.ExecuteReader())
-                    //{
-                    //    if (dr.Read())
-                    //    {
-                    //        Label1.Text = dr["Name"].ToString();
-                    //    }
-                    //}
-
-                    return (Guid) sqlCommand.ExecuteScalar();
+                    //return (Guid) sqlCommand.ExecuteScalar();
+                    return country;
                 }
             }
         }
