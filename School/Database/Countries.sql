@@ -1,0 +1,4 @@
+﻿CREATE TABLE Countries
+(
+	Name VARCHAR(MAX) NOT NULL 
+);

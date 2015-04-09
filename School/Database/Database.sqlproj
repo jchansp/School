@@ -58,4 +58,11 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Countries.sql" />
+    <Build Include="GetRandomCountryName.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Countries.data.sql" />
+  </ItemGroup>
 </Project>

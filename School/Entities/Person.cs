@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 
 namespace Entities
@@ -17,6 +20,34 @@ namespace Entities
 
         private object RandomCountry()
         {
+            var items = new List<Country>();
+            var connectionString =
+                ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
+            using (var conn = new SqlConnection(connectionString))
+            {
+                using (var command = new SqlCommand("GetRandomCountryName", conn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                })
+                {
+                    conn.Open();
+
+                    //SqlParameter custId = cmd.Parameters.AddWithValue("@CustomerId", 10);
+
+                    //using (var dr = command.ExecuteReader())
+                    //{
+                    //    if (dr.Read())
+                    //    {
+                    //        Label1.Text = dr["Name"].ToString();
+                    //    }
+                    //}
+
+                    return command.ExecuteScalar();
+                    conn.Close();
+                }
+            }
+
+            //return Repositories.Countries.Get();
             return new List<string>
             {
                 "Algeria",
