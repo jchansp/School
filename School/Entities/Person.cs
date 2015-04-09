@@ -9,28 +9,75 @@ namespace Entities
 {
     public class Person
     {
-        public object Name { get; set; }
-        public object Country { get; set; }
-
-        protected void RandomPopulate()
+        internal Person()
         {
-            Name = RandomName();
-            Country = RandomCountry();
+            RandomPopulate();
         }
 
-        private object RandomCountry()
+        public Person(Guid id, string name, string country)
         {
-            var items = new List<Country>();
-            var connectionString =
-                ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
-            using (var conn = new SqlConnection(connectionString))
+            Persist(id, name, country);
+            Id = id;
+            Name = name;
+            Country = country;
+        }
+
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string Country { get; set; }
+
+        private void Persist(Guid id, string name, string country)
+        {
+            var connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
+            using (var sqlConnection = new SqlConnection(connectionString))
             {
-                using (var command = new SqlCommand("GetRandomCountryName", conn)
+                using (var sqlCommand = new SqlCommand("PersistPerson", sqlConnection)
                 {
                     CommandType = CommandType.StoredProcedure
                 })
                 {
-                    conn.Open();
+                    sqlConnection.Open();
+
+                    var idSqlParameter = sqlCommand.Parameters.AddWithValue("@Id", id);
+                    var nameSqlParameter = sqlCommand.Parameters.AddWithValue("@Name", name);
+                    var countrySqlParameter = sqlCommand.Parameters.AddWithValue("@Country", country);
+
+                    //using (var dr = command.ExecuteReader())
+                    //{
+                    //    if (dr.Read())
+                    //    {
+                    //        Label1.Text = dr["Name"].ToString();
+                    //    }
+                    //}
+
+                    sqlCommand.ExecuteNonQuery();
+                }
+            }
+        }
+
+        protected void RandomPopulate()
+        {
+            Id = RandomId();
+            Name = RandomName();
+            Country = RandomCountry();
+        }
+
+        private Guid RandomId()
+        {
+            return Guid.NewGuid();
+        }
+
+        private string RandomCountry()
+        {
+            var connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
+            using (var sqlConnection = new SqlConnection(connectionString))
+            {
+                using (var sqlCommand = new SqlCommand("GetRandomCountryName", sqlConnection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                })
+                {
+                    sqlConnection.Open();
 
                     //SqlParameter custId = cmd.Parameters.AddWithValue("@CustomerId", 10);
 
@@ -42,173 +89,12 @@ namespace Entities
                     //    }
                     //}
 
-                    return command.ExecuteScalar();
-                    conn.Close();
+                    return sqlCommand.ExecuteScalar() as string;
                 }
             }
-
-            //return Repositories.Countries.Get();
-            return new List<string>
-            {
-                "Algeria",
-                "Angola",
-                "Botswana",
-                "Burkina Faso",
-                "Burundi",
-                "Cameroon",
-                "Central African Republic",
-                "Chad",
-                "Congo DR",
-                "Congo RO",
-                "Egypt",
-                "Eritrea",
-                "Ethiopia",
-                "Gambia",
-                "Ghana",
-                "Guinea",
-                "Guinea-Bissau",
-                "Ivory Coast",
-                "Kenya",
-                "Lesotho",
-                "Liberia",
-                "Libya",
-                "Madagascar",
-                "Malawi",
-                "Mauritania",
-                "Morocco",
-                "Mozambique",
-                "Namibia",
-                "Niger",
-                "Nigeria",
-                "Rwanda",
-                "Senegal",
-                "Sierra Leone",
-                "Somalia",
-                "South Africa",
-                "Sudan",
-                "Suriname",
-                "Swaziland",
-                "Tanzania",
-                "Togo",
-                "Tunisia",
-                "Western Sahara",
-                "Yemen",
-                "Zambia",
-                "Zimbabwe",
-                "Afghanistan",
-                "Armenia",
-                "Azerbaijan",
-                "Bahrain",
-                "Bangladesh",
-                "Bhutan",
-                "Cambodia",
-                "China (Hong Kong)",
-                "East Timor",
-                "Georgia",
-                "India",
-                "Iran",
-                "Iraq",
-                "Japan",
-                "Jordan",
-                "Kazakhstan",
-                "Kuwait",
-                "Kyrgyzstan",
-                "Malaysia",
-                "Mongolia",
-                "Myanmar",
-                "Nepal",
-                "North Korea",
-                "Oman",
-                "Pakistan",
-                "Palestinian territories",
-                "Papua New Guinea",
-                "Qatar",
-                "Saudi Arabia",
-                "Singapore",
-                "South Korea",
-                "Sri Lanka",
-                "Syria",
-                "Taiwan",
-                "Tajikistan",
-                "Thailand",
-                "Turkey",
-                "Turkmenistan",
-                "United Arab Emirates",
-                "Uzbekistan",
-                "Vietnam",
-                "Albania",
-                "Austria",
-                "Belarus",
-                "Belgium",
-                "Bosnia and Herzegovina",
-                "Bulgaria",
-                "Croatia",
-                "Cyprus",
-                "Czech Republic",
-                "Denmark",
-                "Estonia",
-                "Finland",
-                "France",
-                "Germany",
-                "Greece",
-                "Hungary",
-                "Iceland",
-                "Ireland",
-                "Italy",
-                "Latvia",
-                "Lithuania",
-                "Macedonia",
-                "Moldova",
-                "Montenegro",
-                "Netherlands",
-                "Poland",
-                "Portugal",
-                "Romania",
-                "Russia",
-                "Serbia",
-                "Slovakia",
-                "Slovenia",
-                "Spain",
-                "Sweden",
-                "Switzerland",
-                "Ukraine",
-                "United Kingdom",
-                "Bahamas",
-                "Belize",
-                "Canada",
-                "Costa Rica",
-                "Cuba",
-                "Dominican Republic",
-                "El Salvador",
-                "Greenland",
-                "Guatemala",
-                "Haiti",
-                "Honduras",
-                "Jamaica",
-                "Mexico",
-                "Netherlands",
-                "Nicaragua",
-                "Panama",
-                "Trinidad and Tobago",
-                "United States (Puerto Rico)",
-                "Australia",
-                "Fiji",
-                "New Zealand",
-                "Argentina",
-                "Bolivia",
-                "Brazil",
-                "Chile",
-                "Colombia",
-                "Ecuador",
-                "Guyana",
-                "Paraguay",
-                "Peru",
-                "Uruguay",
-                "Venezuela"
-            }.OrderBy(s => Guid.NewGuid()).First();
         }
 
-        private object RandomName()
+        private string RandomName()
         {
             return
                 new List<string>

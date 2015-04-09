@@ -1,0 +1,5 @@
+﻿CREATE TABLE People
+(
+	Name VARCHAR(MAX) NOT NULL,
+	Country VARCHAR(MAX) NOT NULL
+);

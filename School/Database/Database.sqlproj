@@ -61,6 +61,7 @@
   <ItemGroup>
     <Build Include="Countries.sql" />
     <Build Include="GetRandomCountryName.sql" />
+    <Build Include="People.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Countries.data.sql" />
