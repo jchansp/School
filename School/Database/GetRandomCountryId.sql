@@ -1,0 +1,5 @@
+﻿CREATE PROCEDURE GetRandomCountryId
+AS
+SELECT Id
+FROM Countries
+ORDER BY NEWID();

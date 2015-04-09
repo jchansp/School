@@ -60,8 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Countries.sql" />
-    <Build Include="GetRandomCountryName.sql" />
+    <Build Include="GetRandomCountryId.sql" />
     <Build Include="People.sql" />
+    <Build Include="PersistPerson.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Countries.data.sql" />
