@@ -9,6 +9,8 @@ namespace Entities
 {
     public class Person
     {
+        private readonly string _connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
+
         internal Person()
         {
             RandomPopulate();
@@ -29,8 +31,7 @@ namespace Entities
 
         private void Persist()
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
-            using (var sqlConnection = new SqlConnection(connectionString))
+            using (var sqlConnection = new SqlConnection(_connectionString))
             {
                 using (var sqlCommand = new SqlCommand("PersistPerson", sqlConnection)
                 {
@@ -38,11 +39,13 @@ namespace Entities
                 })
                 {
                     sqlConnection.Open();
-
-                    sqlCommand.Parameters.AddWithValue("@Id", Id);
-                    sqlCommand.Parameters.AddWithValue("@Name", Name);
-                    sqlCommand.Parameters.AddWithValue("@CountryId", Country.Id);
-
+                    var dataTable = new DataTable();
+                    dataTable.Columns.Add("Id", typeof (Guid));
+                    dataTable.Columns.Add("Name", typeof (string));
+                    dataTable.Columns.Add("CountryId", typeof (Guid));
+                    var sqlParameter = sqlCommand.Parameters.AddWithValue("@Person", dataTable);
+                    sqlParameter.SqlDbType = SqlDbType.Structured;
+                    sqlParameter.TypeName = "Person";
                     sqlCommand.ExecuteNonQuery();
                 }
             }
@@ -50,8 +53,7 @@ namespace Entities
 
         private void Persist(Guid id, string name, Country country)
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
-            using (var sqlConnection = new SqlConnection(connectionString))
+            using (var sqlConnection = new SqlConnection(_connectionString))
             {
                 using (var sqlCommand = new SqlCommand("PersistPerson", sqlConnection)
                 {

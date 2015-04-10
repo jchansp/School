@@ -62,7 +62,7 @@
     <Build Include="Countries.sql" />
     <Build Include="GetRandomCountry.sql" />
     <Build Include="People.sql" />
-    <Build Include="PersistPerson.sql" />
+    <Build Include="PersistPeople.sql" />
     <Build Include="Person.sql" />
     <Build Include="Country.sql" />
   </ItemGroup>
