@@ -31,6 +31,11 @@ namespace Entities
 
         private void Persist()
         {
+            Persist(Id, Name, Country);
+        }
+
+        private void Persist(Guid id, string name, Country country)
+        {
             using (var sqlConnection = new SqlConnection(_connectionString))
             {
                 using (var sqlCommand = new SqlCommand("PersistPerson", sqlConnection)
@@ -43,38 +48,10 @@ namespace Entities
                     dataTable.Columns.Add("Id", typeof (Guid));
                     dataTable.Columns.Add("Name", typeof (string));
                     dataTable.Columns.Add("CountryId", typeof (Guid));
-                    dataTable.Rows.Add(Id, Name, Country.Id);
+                    dataTable.Rows.Add(id, name, country.Id);
                     var sqlParameter = sqlCommand.Parameters.AddWithValue("@Person", dataTable);
                     sqlParameter.SqlDbType = SqlDbType.Structured;
                     sqlParameter.TypeName = "Person";
-                    sqlCommand.ExecuteNonQuery();
-                }
-            }
-        }
-
-        private void Persist(Guid id, string name, Country country)
-        {
-            using (var sqlConnection = new SqlConnection(_connectionString))
-            {
-                using (var sqlCommand = new SqlCommand("PersistPeople", sqlConnection)
-                {
-                    CommandType = CommandType.StoredProcedure
-                })
-                {
-                    sqlConnection.Open();
-
-                    var idSqlParameter = sqlCommand.Parameters.AddWithValue("@Id", id);
-                    var nameSqlParameter = sqlCommand.Parameters.AddWithValue("@Name", name);
-                    var countrySqlParameter = sqlCommand.Parameters.AddWithValue("@Country", country);
-
-                    //using (var dr = command.ExecuteReader())
-                    //{
-                    //    if (dr.Read())
-                    //    {
-                    //        Label1.Text = dr["Name"].ToString();
-                    //    }
-                    //}
-
                     sqlCommand.ExecuteNonQuery();
                 }
             }
@@ -94,8 +71,7 @@ namespace Entities
 
         private Country RandomCountry()
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
-            using (var sqlConnection = new SqlConnection(connectionString))
+            using (var sqlConnection = new SqlConnection(_connectionString))
             {
                 using (var sqlCommand = new SqlCommand("GetRandomCountry", sqlConnection)
                 {
