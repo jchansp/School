@@ -43,6 +43,7 @@ namespace Entities
                     dataTable.Columns.Add("Id", typeof (Guid));
                     dataTable.Columns.Add("Name", typeof (string));
                     dataTable.Columns.Add("CountryId", typeof (Guid));
+                    dataTable.Rows.Add(Id, Name, Country.Id);
                     var sqlParameter = sqlCommand.Parameters.AddWithValue("@Person", dataTable);
                     sqlParameter.SqlDbType = SqlDbType.Structured;
                     sqlParameter.TypeName = "Person";
@@ -55,7 +56,7 @@ namespace Entities
         {
             using (var sqlConnection = new SqlConnection(_connectionString))
             {
-                using (var sqlCommand = new SqlCommand("PersistPerson", sqlConnection)
+                using (var sqlCommand = new SqlCommand("PersistPeople", sqlConnection)
                 {
                     CommandType = CommandType.StoredProcedure
                 })
