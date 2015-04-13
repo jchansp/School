@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE GetRandomCountry
 AS
-SELECT Id
+SELECT Code
 	,[Name]
 FROM Countries
 ORDER BY NEWID();

@@ -4,1389 +4,2378 @@
 		)
 BEGIN
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
-		,'Algeria'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Angola'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Botswana'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Burkina Faso'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Burundi'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Cameroon'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Central African Republic'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Chad'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Congo DR'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Congo RO'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Egypt'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Eritrea'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Ethiopia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Gambia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Ghana'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Guinea'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Guinea-Bissau'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Ivory Coast'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Kenya'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Lesotho'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Liberia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Libya'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Madagascar'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Malawi'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Mauritania'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Morocco'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Mozambique'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Namibia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Niger'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Nigeria'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Rwanda'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Senegal'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Sierra Leone'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Somalia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'South Africa'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Sudan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Suriname'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Swaziland'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Tanzania'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Togo'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Tunisia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Western Sahara'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Yemen'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Zambia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Zimbabwe'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
+		'AF'
 		,'Afghanistan'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
-		,'Armenia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Azerbaijan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Bahrain'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Bangladesh'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Bhutan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Cambodia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'China (Hong Kong)'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'East Timor'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Georgia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'India'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Iran'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Iraq'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Japan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Jordan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Kazakhstan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Kuwait'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Kyrgyzstan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Malaysia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Mongolia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Myanmar'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Nepal'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'North Korea'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Oman'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Pakistan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Palestinian territories'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Papua New Guinea'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Qatar'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Saudi Arabia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Singapore'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'South Korea'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Sri Lanka'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Syria'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Taiwan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Tajikistan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Thailand'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Turkey'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Turkmenistan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'United Arab Emirates'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Uzbekistan'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Vietnam'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
+		'AL'
 		,'Albania'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
-		,'Austria'
+		'DZ'
+		,'Algeria'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
-		,'Belarus'
+		'AS'
+		,'American Samoa'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
-		,'Belgium'
+		'AD'
+		,'Andorra'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
-		,'Bosnia and Herzegovina'
+		'AO'
+		,'Angola'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
-		,'Bulgaria'
+		'AI'
+		,'Anguilla'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
-		,'Croatia'
+		'AQ'
+		,'Antarctica'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
-		,'Cyprus'
+		'AG'
+		,'Antigua and Barbuda'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
-		,'Czech Republic'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Denmark'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Estonia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Finland'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'France'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Germany'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Greece'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Hungary'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Iceland'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Ireland'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Italy'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Latvia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Lithuania'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Macedonia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Moldova'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Montenegro'
-		);
-
-	--INSERT INTO Countries (Id, [Name]) VALUES (NEWID(), 'Netherlands');
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Poland'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Portugal'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Romania'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Russia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Serbia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Slovakia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Slovenia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Spain'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Sweden'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Switzerland'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Ukraine'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'United Kingdom'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Bahamas'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Belize'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Canada'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Costa Rica'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Cuba'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Dominican Republic'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'El Salvador'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Greenland'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Guatemala'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Haiti'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Honduras'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Jamaica'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Mexico'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Netherlands'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Nicaragua'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Panama'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Trinidad and Tobago'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'United States (Puerto Rico)'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Australia'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'Fiji'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
-		,'New Zealand'
-		);
-
-	INSERT INTO Countries (
-		Id
-		,[Name]
-		)
-	VALUES (
-		NEWID()
+		'AR'
 		,'Argentina'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
+		'AM'
+		,'Armenia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'AW'
+		,'Aruba'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'AU'
+		,'Australia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'AT'
+		,'Austria'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'AZ'
+		,'Azerbaijan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BS'
+		,'Bahamas'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BH'
+		,'Bahrain'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BD'
+		,'Bangladesh'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BB'
+		,'Barbados'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BY'
+		,'Belarus'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BE'
+		,'Belgium'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BZ'
+		,'Belize'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BJ'
+		,'Benin'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BM'
+		,'Bermuda'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BT'
+		,'Bhutan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BO'
 		,'Bolivia'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
+		'BA'
+		,'Bosnia and Herzegovina'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BW'
+		,'Botswana'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BV'
+		,'Bouvet Island'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BR'
 		,'Brazil'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
+		'BQ'
+		,'British Antarctic Territory'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'IO'
+		,'British Indian Ocean Territory'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'VG'
+		,'British Virgin Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BN'
+		,'Brunei'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BG'
+		,'Bulgaria'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BF'
+		,'Burkina Faso'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BI'
+		,'Burundi'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'KH'
+		,'Cambodia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CM'
+		,'Cameroon'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CA'
+		,'Canada'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CT'
+		,'Canton and Enderbury Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CV'
+		,'Cape Verde'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'KY'
+		,'Cayman Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CF'
+		,'Central African Republic'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TD'
+		,'Chad'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CL'
 		,'Chile'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
+		'CN'
+		,'China'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CX'
+		,'Christmas Island'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CC'
+		,'Cocos [Keeling] Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CO'
 		,'Colombia'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
+		'KM'
+		,'Comoros'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CG'
+		,'Congo - Brazzaville'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CD'
+		,'Congo - Kinshasa'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CK'
+		,'Cook Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CR'
+		,'Costa Rica'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'HR'
+		,'Croatia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CU'
+		,'Cuba'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CY'
+		,'Cyprus'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CZ'
+		,'Czech Republic'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CI'
+		,'Côte d’Ivoire'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'DK'
+		,'Denmark'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'DJ'
+		,'Djibouti'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'DM'
+		,'Dominica'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'DO'
+		,'Dominican Republic'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NQ'
+		,'Dronning Maud Land'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'DD'
+		,'East Germany'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'EC'
 		,'Ecuador'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
+		'EG'
+		,'Egypt'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SV'
+		,'El Salvador'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GQ'
+		,'Equatorial Guinea'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'ER'
+		,'Eritrea'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'EE'
+		,'Estonia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'ET'
+		,'Ethiopia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'FK'
+		,'Falkland Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'FO'
+		,'Faroe Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'FJ'
+		,'Fiji'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'FI'
+		,'Finland'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'FR'
+		,'France'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GF'
+		,'French Guiana'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PF'
+		,'French Polynesia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TF'
+		,'French Southern Territories'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'FQ'
+		,'French Southern and Antarctic Territories'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GA'
+		,'Gabon'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GM'
+		,'Gambia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GE'
+		,'Georgia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'DE'
+		,'Germany'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GH'
+		,'Ghana'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GI'
+		,'Gibraltar'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GR'
+		,'Greece'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GL'
+		,'Greenland'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GD'
+		,'Grenada'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GP'
+		,'Guadeloupe'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GU'
+		,'Guam'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GT'
+		,'Guatemala'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GG'
+		,'Guernsey'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GN'
+		,'Guinea'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GW'
+		,'Guinea-Bissau'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GY'
 		,'Guyana'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
+		'HT'
+		,'Haiti'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'HM'
+		,'Heard Island and McDonald Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'HN'
+		,'Honduras'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'HK'
+		,'Hong Kong SAR China'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'HU'
+		,'Hungary'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'IS'
+		,'Iceland'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'IN'
+		,'India'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'ID'
+		,'Indonesia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'IR'
+		,'Iran'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'IQ'
+		,'Iraq'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'IE'
+		,'Ireland'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'IM'
+		,'Isle of Man'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'IL'
+		,'Israel'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'IT'
+		,'Italy'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'JM'
+		,'Jamaica'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'JP'
+		,'Japan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'JE'
+		,'Jersey'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'JT'
+		,'Johnston Island'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'JO'
+		,'Jordan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'KZ'
+		,'Kazakhstan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'KE'
+		,'Kenya'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'KI'
+		,'Kiribati'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'KW'
+		,'Kuwait'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'KG'
+		,'Kyrgyzstan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'LA'
+		,'Laos'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'LV'
+		,'Latvia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'LB'
+		,'Lebanon'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'LS'
+		,'Lesotho'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'LR'
+		,'Liberia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'LY'
+		,'Libya'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'LI'
+		,'Liechtenstein'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'LT'
+		,'Lithuania'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'LU'
+		,'Luxembourg'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MO'
+		,'Macau SAR China'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MK'
+		,'Macedonia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MG'
+		,'Madagascar'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MW'
+		,'Malawi'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MY'
+		,'Malaysia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MV'
+		,'Maldives'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'ML'
+		,'Mali'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MT'
+		,'Malta'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MH'
+		,'Marshall Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MQ'
+		,'Martinique'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MR'
+		,'Mauritania'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MU'
+		,'Mauritius'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'YT'
+		,'Mayotte'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'FX'
+		,'Metropolitan France'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MX'
+		,'Mexico'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'FM'
+		,'Micronesia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MI'
+		,'Midway Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MD'
+		,'Moldova'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MC'
+		,'Monaco'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MN'
+		,'Mongolia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'ME'
+		,'Montenegro'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MS'
+		,'Montserrat'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MA'
+		,'Morocco'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MZ'
+		,'Mozambique'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MM'
+		,'Myanmar [Burma]'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NA'
+		,'Namibia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NR'
+		,'Nauru'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NP'
+		,'Nepal'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NL'
+		,'Netherlands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'AN'
+		,'Netherlands Antilles'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NT'
+		,'Neutral Zone'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NC'
+		,'New Caledonia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NZ'
+		,'New Zealand'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NI'
+		,'Nicaragua'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NE'
+		,'Niger'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NG'
+		,'Nigeria'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NU'
+		,'Niue'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NF'
+		,'Norfolk Island'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'KP'
+		,'North Korea'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'VD'
+		,'North Vietnam'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MP'
+		,'Northern Mariana Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'NO'
+		,'Norway'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'OM'
+		,'Oman'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PC'
+		,'Pacific Islands Trust Territory'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PK'
+		,'Pakistan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PW'
+		,'Palau'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PS'
+		,'Palestinian Territories'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PA'
+		,'Panama'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PZ'
+		,'Panama Canal Zone'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PG'
+		,'Papua New Guinea'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PY'
 		,'Paraguay'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
+		'YD'
+		,'People''s Democratic Republic of Yemen'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PE'
 		,'Peru'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
+		'PH'
+		,'Philippines'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PN'
+		,'Pitcairn Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PL'
+		,'Poland'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PT'
+		,'Portugal'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PR'
+		,'Puerto Rico'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'QA'
+		,'Qatar'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'RO'
+		,'Romania'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'RU'
+		,'Russia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'RW'
+		,'Rwanda'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'RE'
+		,'Réunion'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'BL'
+		,'Saint Barthélemy'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SH'
+		,'Saint Helena'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'KN'
+		,'Saint Kitts and Nevis'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'LC'
+		,'Saint Lucia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'MF'
+		,'Saint Martin'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PM'
+		,'Saint Pierre and Miquelon'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'VC'
+		,'Saint Vincent and the Grenadines'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'WS'
+		,'Samoa'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SM'
+		,'San Marino'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SA'
+		,'Saudi Arabia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SN'
+		,'Senegal'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'RS'
+		,'Serbia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CS'
+		,'Serbia and Montenegro'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SC'
+		,'Seychelles'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SL'
+		,'Sierra Leone'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SG'
+		,'Singapore'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SK'
+		,'Slovakia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SI'
+		,'Slovenia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SB'
+		,'Solomon Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SO'
+		,'Somalia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'ZA'
+		,'South Africa'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GS'
+		,'South Georgia and the South Sandwich Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'KR'
+		,'South Korea'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'ES'
+		,'Spain'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'LK'
+		,'Sri Lanka'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SD'
+		,'Sudan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SR'
+		,'Suriname'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SJ'
+		,'Svalbard and Jan Mayen'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SZ'
+		,'Swaziland'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SE'
+		,'Sweden'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'CH'
+		,'Switzerland'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SY'
+		,'Syria'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'ST'
+		,'São Tomé and Príncipe'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TW'
+		,'Taiwan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TJ'
+		,'Tajikistan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TZ'
+		,'Tanzania'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TH'
+		,'Thailand'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TL'
+		,'Timor-Leste'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TG'
+		,'Togo'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TK'
+		,'Tokelau'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TO'
+		,'Tonga'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TT'
+		,'Trinidad and Tobago'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TN'
+		,'Tunisia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TR'
+		,'Turkey'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TM'
+		,'Turkmenistan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TC'
+		,'Turks and Caicos Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'TV'
+		,'Tuvalu'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'UM'
+		,'U.S. Minor Outlying Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'PU'
+		,'U.S. Miscellaneous Pacific Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'VI'
+		,'U.S. Virgin Islands'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'UG'
+		,'Uganda'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'UA'
+		,'Ukraine'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'SU'
+		,'Union of Soviet Socialist Republics'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'AE'
+		,'United Arab Emirates'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'GB'
+		,'United Kingdom'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'US'
+		,'United States'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'ZZ'
+		,'Unknown or Invalid Region'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'UY'
 		,'Uruguay'
 		);
 
 	INSERT INTO Countries (
-		Id
+		Code
 		,[Name]
 		)
 	VALUES (
-		NEWID()
+		'UZ'
+		,'Uzbekistan'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'VU'
+		,'Vanuatu'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'VA'
+		,'Vatican City'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'VE'
 		,'Venezuela'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'VN'
+		,'Vietnam'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'WK'
+		,'Wake Island'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'WF'
+		,'Wallis and Futuna'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'EH'
+		,'Western Sahara'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'YE'
+		,'Yemen'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'ZM'
+		,'Zambia'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'ZW'
+		,'Zimbabwe'
+		);
+
+	INSERT INTO Countries (
+		Code
+		,[Name]
+		)
+	VALUES (
+		'AX'
+		,'Åland Islands'
 		);
 END;

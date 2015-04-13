@@ -47,8 +47,8 @@ namespace Entities
                     var dataTable = new DataTable();
                     dataTable.Columns.Add("Id", typeof (Guid));
                     dataTable.Columns.Add("FirstName", typeof (string));
-                    dataTable.Columns.Add("CountryId", typeof (Guid));
-                    dataTable.Rows.Add(id, name, country.Id);
+                    dataTable.Columns.Add("CountryCode", typeof(string));
+                    dataTable.Rows.Add(id, name, country.Code);
                     var sqlParameter = sqlCommand.Parameters.AddWithValue("@Person", dataTable);
                     sqlParameter.SqlDbType = SqlDbType.Structured;
                     sqlParameter.TypeName = "Person";
@@ -88,7 +88,7 @@ namespace Entities
                         {
                             country = new Country
                             {
-                                Id = new Guid(sqlDataReader["Id"].ToString()),
+                                Code = sqlDataReader["Code"].ToString(),
                                 Name = sqlDataReader["Name"].ToString()
                             };
                         }

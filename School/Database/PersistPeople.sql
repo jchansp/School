@@ -10,18 +10,18 @@ BEGIN
 		THEN
 			UPDATE
 			SET FirstName = Source.FirstName
-				,CountryId = Source.CountryId
+				,CountryCode = Source.CountryCode
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
 				Id
 				,FirstName
-				,CountryId
+				,CountryCode
 				)
 			VALUES (
 				Source.Id
 				,Source.FirstName
-				,Source.CountryId
+				,Source.CountryCode
 				);
 				--OUTPUT deleted.*
 				--	,$ACTION
