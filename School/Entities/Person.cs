@@ -47,7 +47,7 @@ namespace Entities
                     var dataTable = new DataTable();
                     dataTable.Columns.Add("Id", typeof (Guid));
                     dataTable.Columns.Add("FirstName", typeof (string));
-                    dataTable.Columns.Add("CountryCode", typeof(string));
+                    dataTable.Columns.Add("CountryCode", typeof (string));
                     dataTable.Rows.Add(id, name, country.Code);
                     var sqlParameter = sqlCommand.Parameters.AddWithValue("@Person", dataTable);
                     sqlParameter.SqlDbType = SqlDbType.Structured;

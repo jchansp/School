@@ -65,6 +65,7 @@
     <Build Include="SetPeople.sql" />
     <Build Include="Person.sql" />
     <Build Include="Country.sql" />
+    <Build Include="SetPeopleTest.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Countries.data.sql" />
