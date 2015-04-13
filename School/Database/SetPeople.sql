@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE PersistPeople @Person Person READONLY
+﻿CREATE PROCEDURE SetPeople @Person Person READONLY
 AS
 BEGIN
 	SET NOCOUNT ON;
