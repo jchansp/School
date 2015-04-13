@@ -38,20 +38,12 @@ namespace Database.Tests
         {
             Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction SetPeopleTest_TestAction;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(People));
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.InconclusiveCondition inconclusiveCondition1;
             this.SetPeopleTestData = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestActions();
             SetPeopleTest_TestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
-            inconclusiveCondition1 = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.InconclusiveCondition();
             // 
             // SetPeopleTest_TestAction
             // 
-            SetPeopleTest_TestAction.Conditions.Add(inconclusiveCondition1);
             resources.ApplyResources(SetPeopleTest_TestAction, "SetPeopleTest_TestAction");
-            // 
-            // inconclusiveCondition1
-            // 
-            inconclusiveCondition1.Enabled = true;
-            inconclusiveCondition1.Name = "inconclusiveCondition1";
             // 
             // SetPeopleTestData
             // 

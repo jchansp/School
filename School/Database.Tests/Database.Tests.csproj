@@ -51,6 +51,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Countries.cs">
+      <SubType>Designer</SubType>
+    </Compile>
     <Compile Include="People.cs">
       <SubType>Designer</SubType>
     </Compile>
@@ -58,9 +61,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Countries.resx">
+      <DependentUpon>Countries.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="People.resx">
       <DependentUpon>People.cs</DependentUpon>
     </EmbeddedResource>
