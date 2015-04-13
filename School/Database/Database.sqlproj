@@ -67,6 +67,8 @@
     <Build Include="Country.sql" />
     <Build Include="GetRandomCountryTest.sql" />
     <Build Include="SetPeopleTest.sql" />
+    <Build Include="Students.sql" />
+    <Build Include="Teachers.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Countries.data.sql" />
