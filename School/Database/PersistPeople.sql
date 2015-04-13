@@ -9,18 +9,18 @@ BEGIN
 	WHEN MATCHED
 		THEN
 			UPDATE
-			SET [Name] = Source.[Name]
+			SET FirstName = Source.FirstName
 				,CountryId = Source.CountryId
 	WHEN NOT MATCHED
 		THEN
 			INSERT (
 				Id
-				,[Name]
+				,FirstName
 				,CountryId
 				)
 			VALUES (
 				Source.Id
-				,Source.[Name]
+				,Source.FirstName
 				,Source.CountryId
 				);
 				--OUTPUT deleted.*
