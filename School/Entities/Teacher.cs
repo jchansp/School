@@ -17,9 +17,11 @@ namespace Entities
         public Teacher(Guid id, string firstName, Country country)
             : base(id, firstName, country)
         {
+            Id = id;
+            Persist(id);
         }
 
-        internal new void Persist()
+        private void Persist()
         {
             Persist(Id);
         }

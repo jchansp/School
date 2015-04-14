@@ -19,7 +19,7 @@ namespace Entities
         {
         }
 
-        internal new void Persist()
+        private void Persist()
         {
             Persist(Id);
         }

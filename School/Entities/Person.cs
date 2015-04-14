@@ -17,7 +17,7 @@ namespace Entities
             Persist();
         }
 
-        public Person(Guid id, string firstName, Country country)
+        protected Person(Guid id, string firstName, Country country)
         {
             Id = id;
             FirstName = firstName;
@@ -25,11 +25,11 @@ namespace Entities
             Persist(id, firstName, country);
         }
 
-        public Guid Id { get; private set; }
-        public string FirstName { get; private set; }
-        public Country Country { get; private set; }
+        protected Guid Id { get; set; }
+        private string FirstName { get; set; }
+        private Country Country { get; set; }
 
-        internal void Persist()
+        private void Persist()
         {
             Persist(Id, FirstName, Country);
         }
@@ -57,14 +57,14 @@ namespace Entities
             }
         }
 
-        internal void RandomPopulate()
+        private void RandomPopulate()
         {
             Id = RandomId();
             FirstName = RandomFirstName();
             Country = RandomCountry();
         }
 
-        private Guid RandomId()
+        private static Guid RandomId()
         {
             return Guid.NewGuid();
         }
@@ -100,7 +100,7 @@ namespace Entities
             }
         }
 
-        private string RandomFirstName()
+        private static string RandomFirstName()
         {
             return
                 new List<string>
