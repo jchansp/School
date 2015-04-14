@@ -22,9 +22,10 @@ BEGIN
 				Source.Id
 				,Source.FirstName
 				,Source.CountryCode
-				);
-				--OUTPUT deleted.*
-				--	,$ACTION
-				--	,inserted.*
-				--INTO #MyTempTable;
+				)
+	--OUTPUT deleted.*
+	--	,$ACTION
+	--	,inserted.*
+	--INTO #MyTempTable;
+	OUTPUT INSERTED.*;
 END;

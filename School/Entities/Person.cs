@@ -29,7 +29,7 @@ namespace Entities
         public string FirstName { get; private set; }
         public Country Country { get; private set; }
 
-        private void Persist()
+        internal void Persist()
         {
             Persist(Id, FirstName, Country);
         }
