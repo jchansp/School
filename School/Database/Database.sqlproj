@@ -72,6 +72,9 @@
     <Build Include="SetTeachers.sql" />
     <Build Include="Teacher.sql" />
     <Build Include="SetTeachersTest.sql" />
+    <Build Include="Student.sql" />
+    <Build Include="SetStudents.sql" />
+    <Build Include="SetStudentsTest.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Countries.data.sql" />

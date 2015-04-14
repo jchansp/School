@@ -59,6 +59,9 @@
     </Compile>
     <Compile Include="SqlDatabaseSetup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Students.cs">
+      <SubType>Designer</SubType>
+    </Compile>
     <Compile Include="Teachers.cs">
       <SubType>Designer</SubType>
     </Compile>
@@ -72,6 +75,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="People.resx">
       <DependentUpon>People.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students.resx">
+      <DependentUpon>Students.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teachers.resx">
       <DependentUpon>Teachers.cs</DependentUpon>
