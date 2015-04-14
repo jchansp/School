@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Diagnostics;
 using Microsoft.Data.Tools.Schema.Sql.UnitTesting;
-using Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Database.Tests
@@ -36,10 +35,10 @@ namespace Database.Tests
         /// </summary>
         private void InitializeComponent()
         {
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction SetPeopleTest_TestAction;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(People));
-            this.SetPeopleTestData = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestActions();
-            SetPeopleTest_TestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
+            SqlDatabaseTestAction SetPeopleTest_TestAction;
+            var resources = new ComponentResourceManager(typeof (People));
+            SetPeopleTestData = new SqlDatabaseTestActions();
+            SetPeopleTest_TestAction = new SqlDatabaseTestAction();
             // 
             // SetPeopleTest_TestAction
             // 
@@ -47,9 +46,9 @@ namespace Database.Tests
             // 
             // SetPeopleTestData
             // 
-            this.SetPeopleTestData.PosttestAction = null;
-            this.SetPeopleTestData.PretestAction = null;
-            this.SetPeopleTestData.TestAction = SetPeopleTest_TestAction;
+            SetPeopleTestData.PosttestAction = null;
+            SetPeopleTestData.PretestAction = null;
+            SetPeopleTestData.TestAction = SetPeopleTest_TestAction;
         }
 
         #endregion

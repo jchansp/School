@@ -19,15 +19,15 @@ namespace Entities
 
         public Person(Guid id, string firstName, Country country)
         {
-            Persist(id, firstName, country);
             Id = id;
             FirstName = firstName;
             Country = country;
+            Persist(id, firstName, country);
         }
 
-        public Guid Id { get; set; }
-        public string FirstName { get; set; }
-        public Country Country { get; set; }
+        public Guid Id { get; private set; }
+        public string FirstName { get; private set; }
+        public Country Country { get; private set; }
 
         private void Persist()
         {
@@ -57,7 +57,7 @@ namespace Entities
             }
         }
 
-        protected void RandomPopulate()
+        internal void RandomPopulate()
         {
             Id = RandomId();
             FirstName = RandomFirstName();

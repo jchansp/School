@@ -2,9 +2,5 @@
 {
     public class RandomTeacher : Teacher
     {
-        public RandomTeacher()
-        {
-            RandomPopulate();
-        }
     }
 }

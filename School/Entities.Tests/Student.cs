@@ -15,7 +15,7 @@ namespace Entities.Tests
         public TestContext TestContext { get; set; }
 
         [TestMethod]
-        public void StudentCreateTest()
+        public void NewStudentTest()
         {
             var student = new RandomStudent();
         }
