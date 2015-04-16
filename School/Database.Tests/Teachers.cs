@@ -1,52 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Common;
-using System.Text;
+﻿using System.ComponentModel;
+using System.Diagnostics;
 using Microsoft.Data.Tools.Schema.Sql.UnitTesting;
-using Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Database.Tests
 {
-    [TestClass()]
+    [TestClass]
     public class Teachers : SqlDatabaseTestClass
     {
+        private SqlDatabaseTestActions SetTeachersTestData;
 
         public Teachers()
         {
             InitializeComponent();
         }
 
-        [TestInitialize()]
+        [TestInitialize]
         public void TestInitialize()
         {
-            base.InitializeTest();
+            InitializeTest();
         }
-        [TestCleanup()]
+
+        [TestCleanup]
         public void TestCleanup()
         {
-            base.CleanupTest();
+            CleanupTest();
         }
 
         #region Designer support code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
+        /// <summary>
+        ///     Required method for Designer support - do not modify
+        ///     the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction SetTeachersTest_TestAction;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Teachers));
-            this.SetTeachersTestData = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestActions();
-            SetTeachersTest_TestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
+            SqlDatabaseTestAction SetTeachersTest_TestAction;
+            var resources = new ComponentResourceManager(typeof (Teachers));
+            SetTeachersTestData = new SqlDatabaseTestActions();
+            SetTeachersTest_TestAction = new SqlDatabaseTestAction();
             // 
             // SetTeachersTestData
             // 
-            this.SetTeachersTestData.PosttestAction = null;
-            this.SetTeachersTestData.PretestAction = null;
-            this.SetTeachersTestData.TestAction = SetTeachersTest_TestAction;
+            SetTeachersTestData.PosttestAction = null;
+            SetTeachersTestData.PretestAction = null;
+            SetTeachersTestData.TestAction = SetTeachersTest_TestAction;
             // 
             // SetTeachersTest_TestAction
             // 
@@ -55,8 +53,33 @@ namespace Database.Tests
 
         #endregion
 
+        [TestMethod]
+        public void SetTeachersTest()
+        {
+            var testActions = SetTeachersTestData;
+            // Execute the pre-test script
+            // 
+            Trace.WriteLineIf((testActions.PretestAction != null), "Executing pre-test script...");
+            var pretestResults = TestService.Execute(PrivilegedContext, PrivilegedContext, testActions.PretestAction);
+            try
+            {
+                // Execute the test script
+                // 
+                Trace.WriteLineIf((testActions.TestAction != null), "Executing test script...");
+                var testResults = TestService.Execute(ExecutionContext, PrivilegedContext, testActions.TestAction);
+            }
+            finally
+            {
+                // Execute the post-test script
+                // 
+                Trace.WriteLineIf((testActions.PosttestAction != null), "Executing post-test script...");
+                var posttestResults = TestService.Execute(PrivilegedContext, PrivilegedContext,
+                    testActions.PosttestAction);
+            }
+        }
 
         #region Additional test attributes
+
         //
         // You can use the following additional attributes as you write your tests:
         //
@@ -68,32 +91,7 @@ namespace Database.Tests
         // [ClassCleanup()]
         // public static void MyClassCleanup() { }
         //
+
         #endregion
-
-
-        [TestMethod()]
-        public void SetTeachersTest()
-        {
-            SqlDatabaseTestActions testActions = this.SetTeachersTestData;
-            // Execute the pre-test script
-            // 
-            System.Diagnostics.Trace.WriteLineIf((testActions.PretestAction != null), "Executing pre-test script...");
-            SqlExecutionResult[] pretestResults = TestService.Execute(this.PrivilegedContext, this.PrivilegedContext, testActions.PretestAction);
-            try
-            {
-                // Execute the test script
-                // 
-                System.Diagnostics.Trace.WriteLineIf((testActions.TestAction != null), "Executing test script...");
-                SqlExecutionResult[] testResults = TestService.Execute(this.ExecutionContext, this.PrivilegedContext, testActions.TestAction);
-            }
-            finally
-            {
-                // Execute the post-test script
-                // 
-                System.Diagnostics.Trace.WriteLineIf((testActions.PosttestAction != null), "Executing post-test script...");
-                SqlExecutionResult[] posttestResults = TestService.Execute(this.PrivilegedContext, this.PrivilegedContext, testActions.PosttestAction);
-            }
-        }
-        private SqlDatabaseTestActions SetTeachersTestData;
     }
 }

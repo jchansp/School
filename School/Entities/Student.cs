@@ -35,7 +35,7 @@ namespace Entities
                 {
                     sqlConnection.Open();
                     var dataTable = new DataTable();
-                    dataTable.Columns.Add("Id", typeof(Guid));
+                    dataTable.Columns.Add("Id", typeof (Guid));
                     dataTable.Rows.Add(id);
                     var sqlParameter = sqlCommand.Parameters.AddWithValue("@Student", dataTable);
                     sqlParameter.SqlDbType = SqlDbType.Structured;

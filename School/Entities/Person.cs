@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using Repositories;
 
 namespace Entities
 {
@@ -22,7 +23,7 @@ namespace Entities
             Id = id;
             FirstName = firstName;
             Country = country;
-            Persist(id, firstName, country);
+            Persist();
         }
 
         protected Guid Id { get; set; }
@@ -31,30 +32,7 @@ namespace Entities
 
         private void Persist()
         {
-            Persist(Id, FirstName, Country);
-        }
-
-        private void Persist(Guid id, string name, Country country)
-        {
-            using (var sqlConnection = new SqlConnection(_connectionString))
-            {
-                using (var sqlCommand = new SqlCommand("SetPeople", sqlConnection)
-                {
-                    CommandType = CommandType.StoredProcedure
-                })
-                {
-                    sqlConnection.Open();
-                    var dataTable = new DataTable();
-                    dataTable.Columns.Add("Id", typeof (Guid));
-                    dataTable.Columns.Add("FirstName", typeof (string));
-                    dataTable.Columns.Add("CountryCode", typeof (string));
-                    dataTable.Rows.Add(id, name, country.Code);
-                    var sqlParameter = sqlCommand.Parameters.AddWithValue("@Person", dataTable);
-                    sqlParameter.SqlDbType = SqlDbType.Structured;
-                    sqlParameter.TypeName = "Person";
-                    sqlCommand.ExecuteNonQuery();
-                }
-            }
+            People.Persist(new Repositories.Person(Id, FirstName, Country.Code));
         }
 
         private void RandomPopulate()
