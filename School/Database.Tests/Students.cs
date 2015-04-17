@@ -8,7 +8,7 @@ namespace Database.Tests
     [TestClass]
     public class Students : SqlDatabaseTestClass
     {
-        private SqlDatabaseTestActions SetStudentsTestData;
+        private SqlDatabaseTestActions Database_PersistStudentsTestData;
 
         public Students()
         {
@@ -35,28 +35,28 @@ namespace Database.Tests
         /// </summary>
         private void InitializeComponent()
         {
-            SqlDatabaseTestAction SetStudentsTest_TestAction;
+            SqlDatabaseTestAction Database_PersistStudentsTest_TestAction;
             var resources = new ComponentResourceManager(typeof (Students));
-            SetStudentsTestData = new SqlDatabaseTestActions();
-            SetStudentsTest_TestAction = new SqlDatabaseTestAction();
+            Database_PersistStudentsTestData = new SqlDatabaseTestActions();
+            Database_PersistStudentsTest_TestAction = new SqlDatabaseTestAction();
             // 
-            // SetStudentsTestData
+            // Database_PersistStudentsTest_TestAction
             // 
-            SetStudentsTestData.PosttestAction = null;
-            SetStudentsTestData.PretestAction = null;
-            SetStudentsTestData.TestAction = SetStudentsTest_TestAction;
+            resources.ApplyResources(Database_PersistStudentsTest_TestAction, "Database_PersistStudentsTest_TestAction");
             // 
-            // SetStudentsTest_TestAction
+            // Database_PersistStudentsTestData
             // 
-            resources.ApplyResources(SetStudentsTest_TestAction, "SetStudentsTest_TestAction");
+            Database_PersistStudentsTestData.PosttestAction = null;
+            Database_PersistStudentsTestData.PretestAction = null;
+            Database_PersistStudentsTestData.TestAction = Database_PersistStudentsTest_TestAction;
         }
 
         #endregion
 
         [TestMethod]
-        public void SetStudentsTest()
+        public void Database_PersistStudentsTest()
         {
-            var testActions = SetStudentsTestData;
+            var testActions = Database_PersistStudentsTestData;
             // Execute the pre-test script
             // 
             Trace.WriteLineIf((testActions.PretestAction != null), "Executing pre-test script...");

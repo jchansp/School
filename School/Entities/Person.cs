@@ -51,7 +51,7 @@ namespace Entities
         {
             using (var sqlConnection = new SqlConnection(_connectionString))
             {
-                using (var sqlCommand = new SqlCommand("GetRandomCountry", sqlConnection)
+                using (var sqlCommand = new SqlCommand("RetrieveRandomCountry", sqlConnection)
                 {
                     CommandType = CommandType.StoredProcedure
                 })

@@ -1,7 +1,0 @@
-﻿CREATE PROCEDURE GetRandomCountryTest
-AS
-BEGIN
-	SET NOCOUNT ON;
-
-	EXEC GetRandomCountry;
-END;

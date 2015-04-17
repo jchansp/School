@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE SetTeachersTest
+﻿CREATE PROCEDURE PersistTeachersTest
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -7,11 +7,11 @@ BEGIN
 	DECLARE @Teacher Teacher;
 
 	INSERT @Person
-	EXEC SetPeopleTest;
+	EXEC PersistPeopleTest;
 
 	INSERT @Teacher (PersonId)
 	SELECT Id
 	FROM @Person;
 
-	EXEC SetTeachers @Teacher;
+	EXEC PersistTeachers @Teacher;
 END;

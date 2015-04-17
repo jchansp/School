@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE SetTeachers @Teacher Teacher READONLY
+﻿CREATE PROCEDURE PersistTeachers @Teacher Teacher READONLY
 AS
 BEGIN
 	SET NOCOUNT ON;

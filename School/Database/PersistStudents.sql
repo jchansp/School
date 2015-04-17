@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE SetStudents @Student Student READONLY
+﻿CREATE PROCEDURE PersistStudents @Student Student READONLY
 AS
 BEGIN
 	SET NOCOUNT ON;

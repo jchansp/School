@@ -8,7 +8,7 @@ namespace Database.Tests
     [TestClass]
     public class People : SqlDatabaseTestClass
     {
-        private SqlDatabaseTestActions SetPeopleTestData;
+        private SqlDatabaseTestActions Database_PersistPeopleTestData;
 
         public People()
         {
@@ -35,28 +35,28 @@ namespace Database.Tests
         /// </summary>
         private void InitializeComponent()
         {
-            SqlDatabaseTestAction SetPeopleTest_TestAction;
+            SqlDatabaseTestAction Database_PersistPeopleTest_TestAction;
             var resources = new ComponentResourceManager(typeof (People));
-            SetPeopleTestData = new SqlDatabaseTestActions();
-            SetPeopleTest_TestAction = new SqlDatabaseTestAction();
+            Database_PersistPeopleTestData = new SqlDatabaseTestActions();
+            Database_PersistPeopleTest_TestAction = new SqlDatabaseTestAction();
             // 
-            // SetPeopleTest_TestAction
+            // Database_PersistPeopleTest_TestAction
             // 
-            resources.ApplyResources(SetPeopleTest_TestAction, "SetPeopleTest_TestAction");
+            resources.ApplyResources(Database_PersistPeopleTest_TestAction, "Database_PersistPeopleTest_TestAction");
             // 
-            // SetPeopleTestData
+            // Database_PersistPeopleTestData
             // 
-            SetPeopleTestData.PosttestAction = null;
-            SetPeopleTestData.PretestAction = null;
-            SetPeopleTestData.TestAction = SetPeopleTest_TestAction;
+            Database_PersistPeopleTestData.PosttestAction = null;
+            Database_PersistPeopleTestData.PretestAction = null;
+            Database_PersistPeopleTestData.TestAction = Database_PersistPeopleTest_TestAction;
         }
 
         #endregion
 
         [TestMethod]
-        public void SetPeopleTest()
+        public void Database_PersistPeopleTest()
         {
-            var testActions = SetPeopleTestData;
+            var testActions = Database_PersistPeopleTestData;
             // Execute the pre-test script
             // 
             Trace.WriteLineIf((testActions.PretestAction != null), "Executing pre-test script...");

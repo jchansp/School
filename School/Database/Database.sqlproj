@@ -60,21 +60,21 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Countries.sql" />
-    <Build Include="GetRandomCountry.sql" />
+    <Build Include="RetrieveRandomCountry.sql" />
     <Build Include="People.sql" />
-    <Build Include="SetPeople.sql" />
+    <Build Include="PersistPeople.sql" />
     <Build Include="Person.sql" />
     <Build Include="Country.sql" />
-    <Build Include="GetRandomCountryTest.sql" />
-    <Build Include="SetPeopleTest.sql" />
+    <Build Include="RetrieveRandomCountryTest.sql" />
+    <Build Include="PersistPeopleTest.sql" />
     <Build Include="Students.sql" />
     <Build Include="Teachers.sql" />
-    <Build Include="SetTeachers.sql" />
+    <Build Include="PersistTeachers.sql" />
     <Build Include="Teacher.sql" />
-    <Build Include="SetTeachersTest.sql" />
+    <Build Include="PersistTeachersTest.sql" />
     <Build Include="Student.sql" />
-    <Build Include="SetStudents.sql" />
-    <Build Include="SetStudentsTest.sql" />
+    <Build Include="PersistStudents.sql" />
+    <Build Include="PersistStudentsTest.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Countries.data.sql" />

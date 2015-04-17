@@ -28,7 +28,7 @@ namespace Entities
         {
             using (var sqlConnection = new SqlConnection(_connectionString))
             {
-                using (var sqlCommand = new SqlCommand("SetStudents", sqlConnection)
+                using (var sqlCommand = new SqlCommand("PersistStudents", sqlConnection)
                 {
                     CommandType = CommandType.StoredProcedure
                 })

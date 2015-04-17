@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="SetStudentsTest_TestAction.SqlScript" xml:space="preserve">
-    <value>SetStudentsTest</value>
+  <data name="Database_PersistStudentsTest_TestAction.SqlScript" xml:space="preserve">
+    <value>PersistStudentsTest</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE GetRandomCountry
+﻿CREATE PROCEDURE RetrieveRandomCountry
 AS
 BEGIN
 	SET NOCOUNT ON;

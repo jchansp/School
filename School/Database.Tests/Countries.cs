@@ -9,7 +9,7 @@ namespace Database.Tests
     [TestClass]
     public class Countries : SqlDatabaseTestClass
     {
-        private SqlDatabaseTestActions GetRandomCountryTestData;
+        private SqlDatabaseTestActions Database_RetrieveRandomCountryTestData;
 
         public Countries()
         {
@@ -36,23 +36,18 @@ namespace Database.Tests
         /// </summary>
         private void InitializeComponent()
         {
-            SqlDatabaseTestAction GetRandomCountryTest_TestAction;
+            SqlDatabaseTestAction Database_RetrieveRandomCountryTest_TestAction;
             var resources = new ComponentResourceManager(typeof (Countries));
             RowCountCondition rowCountCondition1;
-            GetRandomCountryTestData = new SqlDatabaseTestActions();
-            GetRandomCountryTest_TestAction = new SqlDatabaseTestAction();
+            Database_RetrieveRandomCountryTestData = new SqlDatabaseTestActions();
+            Database_RetrieveRandomCountryTest_TestAction = new SqlDatabaseTestAction();
             rowCountCondition1 = new RowCountCondition();
             // 
-            // GetRandomCountryTestData
+            // Database_RetrieveRandomCountryTest_TestAction
             // 
-            GetRandomCountryTestData.PosttestAction = null;
-            GetRandomCountryTestData.PretestAction = null;
-            GetRandomCountryTestData.TestAction = GetRandomCountryTest_TestAction;
-            // 
-            // GetRandomCountryTest_TestAction
-            // 
-            GetRandomCountryTest_TestAction.Conditions.Add(rowCountCondition1);
-            resources.ApplyResources(GetRandomCountryTest_TestAction, "GetRandomCountryTest_TestAction");
+            Database_RetrieveRandomCountryTest_TestAction.Conditions.Add(rowCountCondition1);
+            resources.ApplyResources(Database_RetrieveRandomCountryTest_TestAction,
+                "Database_RetrieveRandomCountryTest_TestAction");
             // 
             // rowCountCondition1
             // 
@@ -60,14 +55,20 @@ namespace Database.Tests
             rowCountCondition1.Name = "rowCountCondition1";
             rowCountCondition1.ResultSet = 1;
             rowCountCondition1.RowCount = 1;
+            // 
+            // Database_RetrieveRandomCountryTestData
+            // 
+            Database_RetrieveRandomCountryTestData.PosttestAction = null;
+            Database_RetrieveRandomCountryTestData.PretestAction = null;
+            Database_RetrieveRandomCountryTestData.TestAction = Database_RetrieveRandomCountryTest_TestAction;
         }
 
         #endregion
 
         [TestMethod]
-        public void GetRandomCountryTest()
+        public void Database_RetrieveRandomCountryTest()
         {
-            var testActions = GetRandomCountryTestData;
+            var testActions = Database_RetrieveRandomCountryTestData;
             // Execute the pre-test script
             // 
             Trace.WriteLineIf((testActions.PretestAction != null), "Executing pre-test script...");

@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE SetPeopleTest
+﻿CREATE PROCEDURE PersistPeopleTest
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -12,11 +12,7 @@ BEGIN
 		)
 	VALUES (
 		NEWID()
-		,(
-			SELECT TOP 1 FirstName
-			FROM People
-			ORDER BY NEWID()
-			)
+		,NEWID()
 		,(
 			SELECT TOP 1 Code
 			FROM Countries
@@ -24,5 +20,5 @@ BEGIN
 			)
 		);
 
-	EXEC SetPeople @Person;
+	EXEC PersistPeople @Person;
 END;

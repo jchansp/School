@@ -28,7 +28,7 @@ namespace Repositories
         {
             using (var sqlConnection = new SqlConnection(ConnectionString))
             {
-                using (var sqlCommand = new SqlCommand("SetPeople", sqlConnection)
+                using (var sqlCommand = new SqlCommand("PersistPeople", sqlConnection)
                 {
                     CommandType = CommandType.StoredProcedure
                 })
