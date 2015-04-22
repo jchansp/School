@@ -1,6 +1,6 @@
 ﻿namespace Repositories
 {
-    internal class Students
+    public class Students : Repository
     {
     }
 }

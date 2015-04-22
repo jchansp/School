@@ -1,17 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
 namespace Repositories
 {
-    public static class People
+    public class People : Repository
     {
-        private static readonly string ConnectionString =
-            ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
-
-        public static void Persist(IEnumerable<Person> people)
+        public void Persist(IEnumerable<Person> people)
         {
             var dataTable = new DataTable();
             dataTable.Columns.Add("Id", typeof (Guid));
@@ -19,7 +15,7 @@ namespace Repositories
             dataTable.Columns.Add("CountryCode", typeof (string));
             foreach (var person in people)
             {
-                dataTable.Rows.Add(person.Id, person.FirstName, person.CountryId);
+                dataTable.Rows.Add(person.Id, person.FirstName, person.CountryCode);
             }
             Persist(dataTable);
         }
@@ -48,7 +44,7 @@ namespace Repositories
             dataTable.Columns.Add("Id", typeof (Guid));
             dataTable.Columns.Add("FirstName", typeof (string));
             dataTable.Columns.Add("CountryCode", typeof (string));
-            dataTable.Rows.Add(person.Id, person.FirstName, person.CountryId);
+            dataTable.Rows.Add(person.Id, person.FirstName, person.CountryCode);
             Persist(dataTable);
         }
     }

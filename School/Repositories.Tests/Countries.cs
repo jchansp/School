@@ -6,8 +6,9 @@ namespace Repositories.Tests
     public class Countries
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Repositories_Countries_RetrieveRandomOneTest()
         {
+            Assert.IsNotNull(Repositories.Countries.RetrieveRandomOne());
         }
     }
 }

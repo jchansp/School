@@ -37,7 +37,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Country.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="Repository.cs" />
     <Compile Include="Teachers.cs" />
     <Compile Include="Students.cs" />
     <Compile Include="Countries.cs" />

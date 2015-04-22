@@ -15,9 +15,9 @@ namespace Entities.Tests
         public TestContext TestContext { get; set; }
 
         [TestMethod]
-        public void NewTeacherTest()
+        public void Entities_Teacher_Test()
         {
-            var teacher = new RandomTeacher();
+            Assert.IsNotNull(new RandomTeacher());
         }
 
         #region Additional test attributes

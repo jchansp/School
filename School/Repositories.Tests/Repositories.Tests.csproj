@@ -56,6 +56,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Countries.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Repositories\Repositories.csproj">
+      <Project>{b813af8c-d51d-4649-ad53-feb42f26544a}</Project>
+      <Name>Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

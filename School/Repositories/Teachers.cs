@@ -1,6 +1,6 @@
 ﻿namespace Repositories
 {
-    internal class Teachers
+    internal class Teachers:Repository
     {
     }
 }

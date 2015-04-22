@@ -32,7 +32,7 @@ namespace Entities
 
         private void Persist()
         {
-            People.Persist(new Repositories.Person(Id, FirstName, Country.Code));
+            People.Persist(new Repositories.Person {Id = Id, FirstName = FirstName, CountryCode = Country.Code});
         }
 
         private void RandomPopulate()
@@ -49,33 +49,8 @@ namespace Entities
 
         private Country RandomCountry()
         {
-            using (var sqlConnection = new SqlConnection(_connectionString))
-            {
-                using (var sqlCommand = new SqlCommand("RetrieveRandomCountry", sqlConnection)
-                {
-                    CommandType = CommandType.StoredProcedure
-                })
-                {
-                    sqlConnection.Open();
-
-                    //SqlParameter custId = cmd.Parameters.AddWithValue("@CustomerId", 10);
-                    Country country = null;
-                    using (var sqlDataReader = sqlCommand.ExecuteReader())
-                    {
-                        if (sqlDataReader.Read())
-                        {
-                            country = new Country
-                            {
-                                Code = sqlDataReader["Code"].ToString(),
-                                Name = sqlDataReader["Name"].ToString()
-                            };
-                        }
-                    }
-
-                    //return (Guid) sqlCommand.ExecuteScalar();
-                    return country;
-                }
-            }
+            var country = Countries.RetrieveRandomOne();
+            return new Country {Code = country.Code, Name = country.Name};
         }
 
         private static string RandomFirstName()
